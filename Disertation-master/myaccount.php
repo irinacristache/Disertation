@@ -1,5 +1,4 @@
 
-	
 <? php
 	session_start();
 	print_r($_SESSION);
@@ -14,7 +13,7 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="./styles/styles-login.css">
+	<link rel="stylesheet" type="text/css" href="./styles/styles-myaccount.css">
 </head>
 
 <body>
@@ -26,3 +25,8 @@
 			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
 		
 </div>
+
+<button class="button button4"  onclick="document.location='logout.php'">Log out</button>
+
+</body>
+</html>

@@ -48,7 +48,7 @@ session_start();
 if (!isset($_SESSION['loggedIn']))
 	$_SESSION['loggedIn'] = 0;
 else if ($_SESSION['loggedIn'] == 1)
-	header('Location: home.php');
+	header('Location: myaccount.php');
 ?>
 <!DOCTYPE html>
 <html>
