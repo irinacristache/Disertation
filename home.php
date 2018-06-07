@@ -15,7 +15,7 @@
 		</div>
 		
 	<!--The button which allows to access the editing app-->
-	<button class="button button1" onclick="document.location='index.html'">Let's edit</button>
+	<button class="button button1" onclick="document.location='editor.php'">Let's edit</button>
 	<!--The button that allows to log in into the website-->
 	<button class="button button2"  onclick="document.location='login.php'" >Log in</button>
 	<!--The button which allows to register with the website-->

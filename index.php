@@ -51,7 +51,7 @@
 				<button id="submit">Add Text</button>
 				
 			</div>
-			<img id="image" class="img" src="dog.jpg">
+			<img id="image" class="img" src="./images/13.jpg">
 		</div>
 		
 		
