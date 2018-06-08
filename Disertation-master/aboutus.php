@@ -3,6 +3,7 @@
 <head>
 <title>About us</title>
 <link rel="stylesheet" type="text/css" href="./styles/styles-aboutus.css">
+<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 <body>
 <!--This creates the top menu-->

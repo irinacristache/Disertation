@@ -14,6 +14,7 @@
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-myaccount.css">
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 
 <body>

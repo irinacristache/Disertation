@@ -12,7 +12,8 @@ header("Location: home.php");
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="./styles/styles-login.css">
+	<link rel="stylesheet" type="text/css" href="./styles/styles-logout.css">
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 
 <body>

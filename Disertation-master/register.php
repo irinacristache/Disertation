@@ -26,6 +26,7 @@ $conn = null;
 <head>
 	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-register.css">
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 
 <body>

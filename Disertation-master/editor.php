@@ -3,7 +3,8 @@
 <head>
 	<title>Photo editor</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-editor.css">
-	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	<script type="text/javascript" src="editor-main.js"></script>
 	<script type="text/javascript" src="caman.full.min.js"></script>
 </head>
 

@@ -3,6 +3,7 @@
 <head>
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-gallery.css">
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 
 <body>

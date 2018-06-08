@@ -55,6 +55,7 @@ else if ($_SESSION['loggedIn'] == 1)
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-login.css">
+	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 
 <body>
