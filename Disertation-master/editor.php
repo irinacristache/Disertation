@@ -48,11 +48,70 @@
 					<input id="gamma" name="gamma" type="range" min=-0 max=10 value=0>
 	
 				</p>
+				
+				<!--Slider Contrast-->
+				<p>
+					<label for="contrast">Contrast</label>
+					<input id="contrast" name="contrast" type="range" min=-20 max=20 value=0>
+				</p>
+				
+				<!--Slider Sharpen (very slow)-->
+				<p>
+					<label for="sharpen">Sharpen</label>
+					<input id="sharpen" name="sharpen" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Saturation-->
+				<p>
+					<label for="saturation">Saturation</label>
+					<input id="saturation" name="saturation" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Exposure-->
+				<p>
+					<label for="exposure">Exposure</label>
+					<input id="exposure" name="exposure" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Noise-->
+				<p>
+					<label for="noise">Noise</label>
+					<input id="noise" name="noise" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Sepia-->
+				<p>
+					<label for="sepia">Sepia</label>
+					<input id="sepia" name="sepia" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Clip-->
+				<p>
+					<label for="clip">Clip</label>
+					<input id="clip" name="clip" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider stackBlur-->
+				<p>
+					<label for="stackBlur">stackBlur</label>
+					<input id="stackBlur" name="stackBlur" type="range" min=-100 max=100 value=0>
+				</p>
+	
 				<!--Buttons for filters-->
-				<button id="vintage"class="filter">Vintage</button>
 				<button id="lomo"class="filter">Lomo</button>
 				<button id="clarity"class="filter">Clarity</button>
-				<button id="orangePeel"class="filter">Orange Peel</button>
+				<button id="hazydays"class="filter">Smooth but Foggy</button>
+				<button id="herMajesty"class="filter">Pink</button>
+				<button id="love"class="filter">Red for Love</button>
+				<button id="crossProcess"class="filter">Purple Vibe</button>
+				<button id="orangePeel"class="filter">Orange</button>
+				<button id="glowingSun"class="filter">Yellow</button>
+				<button id="jarques"class="filter">Gray Area</button>
+				<button id="grungy"class="filter">Welcome to the Dark Side</button>
+				<button id="sinCity"class="filter">Black & White</button>
+				<button id="pinhole"class="filter">Black & White (Smooth)</button>
+				<button id="vintage"class="filter">Vintage</button>
+				<button id="sunrise"class="filter">Memories</button>
 				
 				<!--Add text over image-->
 				<h4>Add a message over your image:</h4>
