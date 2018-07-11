@@ -72,3 +72,26 @@ input[type="file"] {
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+font-size:500px;
+}
+
+.social{
+position:right;
+
+}
+/**Styles the Twitter button*/
+.twitter-hashtag-button{
+	width: 78%;
+	position: right;
+}
+
+.fb-share-button{
+   font-size: 50px;
+   }

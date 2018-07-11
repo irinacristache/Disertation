@@ -9,6 +9,16 @@
 </head>
 
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--This creates the top menu-->
 <div class="container1" align="center">
 			<li><a href="./home.php"class="cool-link">Home</a></li>
@@ -123,6 +133,43 @@
 		</div>
 		
 		
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+</div>
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>
 		
-	</body>
+	<!--Share buttons-->
+<div id="share-buttons">	
+
+	<!--Position the share on Fb button-->
+    <div class="fb-share-button" data-href="https://www.facebook.com" data-layout="button" data-size="small" data-mobile-iframe="true" ><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+   
+<!--Option2 Facebook-->
+    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+	<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+	</a>
+
+	<!--This button allows the user to connect with Twitter-->
+	<a href="https://twitter.com/intent/tweet?button_hashtag=twitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"  data-show-count="false">Tweet #twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
+<!--Option 2 Twitter-->
+		<a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+	<!--This button allows the user to connect with Google-->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<g:plus action="share"></g:plus>
+	
+<!--Option 2 Google-->
+	<a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+    <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+	
+</div>
+</body>
 </html>

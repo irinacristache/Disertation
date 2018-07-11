@@ -6,6 +6,11 @@
 <link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 </head>
 <body>
+
+<!--To create the share on Facebook button-->
+
+
+
 <!--This creates the top menu-->
 <div class="container1">
 			<li><a href="./home.php"class="cool-link">Home</a></li>
@@ -20,5 +25,9 @@
 <button class="button button2"  onclick="document.location='login.php'" >Log in</button>
 <!--This button allows to register with the website-->
 <button class="button button3"  onclick="document.location='register.php'">Register</button>
+
+
+
+
 </body>
 </html>

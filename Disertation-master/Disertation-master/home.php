@@ -12,7 +12,7 @@
 	
 	<!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
-
+	
 </head>
 <body>
 
@@ -49,6 +49,7 @@ if(isset($_SESSION['image']))
 	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="50" height="50"></a>
 	<a href="#" onclick="clearImage();">Clear Image</a>
 	
-		
+
+
 </body>
 </html>
