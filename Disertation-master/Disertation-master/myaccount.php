@@ -1,5 +1,5 @@
 
-<? php
+<?php
 	session_start();
 	print_r($_SESSION);
 	if(!isset($_SESSION['loggedIn']) || (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === 0) )

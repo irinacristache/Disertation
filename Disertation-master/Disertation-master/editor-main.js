@@ -6,10 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
       var imageElement = document.getElementById('image');
       //Set the URL to be the image that the user picked.
       imageElement.setAttribute('src', URL.createObjectURL(imageFile));
+      var imgContainer = document.getElementById('imgContainer');
+      imgContainer.setAttribute("width", "100px");
+      imgContainer.setAttribute("height", "100px");
       //Caman method will create a canvas of the image that the user loads.
       Caman("#image", function() {
         this.revert(true);
         });
+      imageElement = document.getElementById('image');
+      imageElement.removeAttribute("width");
+      imageElement.removeAttribute("height");
         
     };
     //Call the following function whenever the user picked a new image.

@@ -28,7 +28,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 			else{
 				$row = $stm->fetch(PDO::FETCH_ASSOC);
 				
-				if($row['Password'] === $pass){
+				if(password_verify($pass, $row['Password'])){
+				//if($row['Password'] === $pass){
 					session_start();
 					$_SESSION['loggedIn'] = 1;
 					$_SESSION['username'] = $user;

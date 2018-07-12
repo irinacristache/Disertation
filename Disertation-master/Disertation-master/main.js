@@ -6,10 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
       var imageElement = document.getElementById('image');
       //Set the URL to be the image that the user picked.
       imageElement.setAttribute('src', URL.createObjectURL(imageFile));
+      var imgContainer = document.getElementById('imgContainer');
+      imgContainer.setAttribute("width", "100px");
+      imgContainer.setAttribute("height", "100px");
       //Caman method will create a canvas of the image that the user loads.
       Caman("#image", function() {
         this.revert(true);
         });
+      $('canvas')[0].removeAttribute("width");
+      $('canvas')[0].removeAttribute("height");
         
     };
     //Call the following function whenever the user picked a new image.
@@ -19,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function changeSliderHandler(event) {
         //Use Caman method to make a canvas of the image in the app
         //Call function render caman which will apply the slider effect and clear effect that were there before.
-        Caman("#image", function renderCaman() {
+        Caman("image", function renderCaman() {
          this.revert(false);
          //this is what is actually applying the event according to the value we have on the slider.
          //event.target.name collects information - gets the name of the slider - ex: brightness.

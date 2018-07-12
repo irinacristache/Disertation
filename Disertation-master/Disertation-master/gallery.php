@@ -5,13 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="./styles/styles-gallery.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	
+	<!-- JQuery imported-->
+	<script type="text/javascript" src="jquery-changebg.js"></script>
 	
-	<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>
-
-	
+	<!-- The function to allow a user to change the background image-->
+	<script type="text/javascript" src="changebg.js"></script>
 </head>
 
 <body>
+
+<?php
+
+session_start();
+if(isset($_SESSION['image']))
+{
+	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
+}
+?>
 
 <!--This creates the top menu-->
 <div class="container1">
