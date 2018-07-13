@@ -57,9 +57,13 @@ else if ($_SESSION['loggedIn'] == 1)
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="./styles/styles-login.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	
 </head>
 
 <body>
+
+
 <!--This creates the top menu-->
 <div class="container1" align="center">
 			<li><a href="./home.php"class="cool-link">Home</a></li>

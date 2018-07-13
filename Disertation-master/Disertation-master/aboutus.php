@@ -4,10 +4,25 @@
 <title>About us</title>
 <link rel="stylesheet" type="text/css" href="./styles/styles-aboutus.css">
 <link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+<!-- JQuery imported-->
+	<script type="text/javascript" src="jquery-changebg.js"></script>
+	
+<!-- The function to allow a user to change the background image-->
+	<script type="text/javascript" src="changebg.js"></script>
+
 </head>
 <body>
 
-<!--To create the share on Facebook button-->
+<!--Mantains the session for the background image-->
+<?php
+
+session_start();
+if(isset($_SESSION['image']))
+{
+	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
+}
+?>
+
 
 
 

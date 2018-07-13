@@ -12,14 +12,17 @@
  }
  /**Contact form*/
  .contact-title{
-	 margin-top:100px;
+	 margin-top:150px;
 	 color:white;
 	 text-transform: uppercase;
 	 transition: bottom all 4s ease-in-out;
+	 
+	
  }
  .contact-title h1{
 	font-size:32px;
 	line-height: 10px;
+	
  }
  form{
 	margin-top: 50px;

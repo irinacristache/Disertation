@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<!--Mantains the session for the background image-->
 <?php
 
 session_start();
