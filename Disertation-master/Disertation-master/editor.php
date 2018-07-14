@@ -6,7 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	<script type="text/javascript" src="editor-main.js"></script>
 	<script type="text/javascript" src="caman.full.min.js"></script>
-	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type ="text/javascript">
+		
+		$(function () {
+		$(window).on('beforeunload', function()
+								 
+								 {
+									//Alert box will appear when the user tries to close the tab.
+									return '';
+									})	
+			});
+	</script>
 	
 </head>
 
