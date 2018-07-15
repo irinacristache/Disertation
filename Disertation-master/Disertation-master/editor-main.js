@@ -6,16 +6,33 @@ document.addEventListener('DOMContentLoaded', function() {
       var imageElement = document.getElementById('image');
       //Set the URL to be the image that the user picked.
       imageElement.setAttribute('src', URL.createObjectURL(imageFile));
-      var imgContainer = document.getElementById('imgContainer');
-      imgContainer.setAttribute("width", "100px");
-      imgContainer.setAttribute("height", "100px");
+      //var imgContainer = document.getElementById('imgContainer');
+      //imgContainer.setAttribute("width", "100px");
+      //imgContainer.setAttribute("height", "100px");
       //Caman method will create a canvas of the image that the user loads.
       Caman("#image", function() {
         this.revert(true);
-        });
-      imageElement = document.getElementById('image');
-      imageElement.removeAttribute("width");
-      imageElement.removeAttribute("height");
+        console.log(this);
+        //alert(this.canvas.style.cssText);
+        
+        //Autoresize photo
+        var newWidth = this.preScaledWidth;
+        var newHeight = this.preScaledHeight;
+        //If it is larger than 750 divide by 2. 
+        while(newWidth > 750)
+        {
+          newWidth = newWidth / 2;
+          newHeight = newHeight / 2;
+        }
+        //this.canvas.style.cssText = "width: 300px; height: 500px;";
+        this.canvas.style.cssText = "width: " + newWidth + "px; height: " + newHeight + "px;";
+        //alert(this.canvas.style.cssText);
+        this.render();
+        //console.log(this);
+      });
+      //imageElement = document.getElementById('image');
+      //imageElement.removeAttribute("width");
+      //imageElement.removeAttribute("height");
         
     };
     //Call the following function whenever the user picked a new image.

@@ -56,3 +56,14 @@ form .submit:hover{
 	cursor:pointer;
 }
 
+.ErrMsg {
+   background: red;
+   width: 650px;
+   display: inline-block;
+}
+
+.SuccMsg {
+   background: green;
+   width: 650px;
+   display: inline-block;
+}

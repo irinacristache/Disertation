@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
 include 'connect.php';
 
@@ -44,6 +45,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		}
 	}
 }
+
+
 
 session_start();
 if (!isset($_SESSION['loggedIn']))

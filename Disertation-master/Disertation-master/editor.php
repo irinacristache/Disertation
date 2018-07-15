@@ -22,6 +22,7 @@
 </head>
 
 <body>
+	
 
 
 <div id="fb-root"></div>
@@ -143,9 +144,7 @@
 				<button id="submit">Add Text</button>
 				
 			</div>
-			<div id='imgContainer'>
 				<img id="image" class="img" src="./images/19.png">
-			</div>
 		</div>
 		
 		
