@@ -9,6 +9,19 @@
 	
 <!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
+	
+<!--This creates the pop up menu-->
+<script type="text/javascript">
+			<!--
+			    function toggle_visibility(id) {
+			       var e = document.getElementById(id);
+			       if(e.style.display == 'block')
+			          e.style.display = 'none';
+			       else
+			          e.style.display = 'block';
+			    }
+			//-->
+</script>
 
 </head>
 <body>
@@ -41,6 +54,43 @@ if(isset($_SESSION['image']))
 <!--This button allows to register with the website-->
 <button class="button button3"  onclick="document.location='register.php'">Register</button>
 
+<!--This  creates the text boxes-->
+<div class="box1">Ioana David</div>
+
+<img  src="./images/20.jpg" id="ioana" alt="ioana" href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');"/>
+<div id="popupBoxOnePosition" class="pop">
+	<div class="popupBoxWrapper">
+		<div class="popupBoxContent">
+					<h3>Ioana David</h3>
+					<p>Insert Description here</p>
+					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">here</a> to close popup box one.<button id="close" onclick="document.getElementbyId('popupBoxOnePosition').style.display='none'">X</button><br></p>
+		</div>
+	</div>
+</div>
+
+<div id="popupBoxOnePosition">
+			<div class="popupBoxWrapper">
+				<div class="popupBoxContent">
+					<h3>Ioana David</h3>
+					<p>Insert description here</p>
+					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">here</a> to close popup box one.</p>
+				</div>
+			</div>
+</div>
+		
+
+	
+<div class="box2">Irina Cristache</div>
+<img  src="./images/21.jpg" id="irina" alt="irina" href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');"/>
+<div id="popupBoxTwoPosition">
+			<div class="popupBoxWrapper">
+				<div class="popupBoxContent">
+					<h3>Irina Cristache</h3>
+					<p>Insert description here</p>
+					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');">here</a> to close popup box two.</p>
+				</div>
+			</div>
+		</div>
 
 
 
