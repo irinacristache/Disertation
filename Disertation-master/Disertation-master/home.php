@@ -43,12 +43,12 @@ if(isset($_SESSION['image']))
 	
 	<!--Choose Background image-->
 	<div id="chooseBg" >
-	
-	<a href="#" onclick="changeImage(9);"><img src="./images/9.jpg" width="50" height="50"/></a>
-	<a href="#"onclick="changeImage(5);"><img src="./images/5.jpg" width="50" height="50"></a>
-	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="50" height="50"></a>
-	<a href="#" onclick="clearImage();">Clear Image</a>
-	
+	<center><p>Choose your background image!</p></center>
+	<a href="#" onclick="changeImage(9);"><img src="./images/9.jpg" width="85" height="85"/></a>
+	<a href="#"onclick="changeImage(5);"><img src="./images/5.jpg" width="85" height="85"></a>
+	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="85" height="85"><br></a>
+	<center><a href="#" onclick="clearImage();">Clear Image</a></center>
+	</div>
 
 
 </body>

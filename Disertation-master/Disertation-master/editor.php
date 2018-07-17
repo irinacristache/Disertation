@@ -158,32 +158,7 @@
 
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 		
-	<!--Share buttons-->
-<div id="share-buttons">	
 
-	<!--Position the share on Fb button-->
-    <div class="fb-share-button" data-href="https://www.facebook.com" data-layout="button" data-size="small" data-mobile-iframe="true" ><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-   
-<!--Option2 Facebook-->
-    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-	<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-	</a>
-
-	<!--This button allows the user to connect with Twitter-->
-	<a href="https://twitter.com/intent/tweet?button_hashtag=twitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"  data-show-count="false">Tweet #twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
-<!--Option 2 Twitter-->
-		<a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-    </a>
-
-	<!--This button allows the user to connect with Google-->
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<g:plus action="share"></g:plus>
-	
-<!--Option 2 Google-->
-	<a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
-    <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
-    </a>
 	
 </div>
 </body>

@@ -61,10 +61,13 @@ if(isset($_SESSION['image']))
 
 <!--This creates the text box for Irina-->
 <div class="box2">Irina Cristache</div>
+
 <img  src="./images/21.jpg" id="irina" alt="irina" href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');"/>
 
 <!--This creates the pop up window for Ioana-->
+
 <div id="popupBoxOnePosition">
+
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
 					<button id="close" onclick="toggle_visibility('popupBoxOnePosition');">X</button>

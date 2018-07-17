@@ -15,4 +15,18 @@ html{
 	height:100%;
 }
 
+/**Styles the choose background box*/
+#chooseBg{
+position: absolute;
+margin-top: 20px;
+width: 300px;
+border: 5px solid;
+padding: 10px;
+color: #ffffff;
+background-color:#ff5722;
+}
+
+#chooseBg:hover {
+    background-color: #f44336;
+    color: white;
 
