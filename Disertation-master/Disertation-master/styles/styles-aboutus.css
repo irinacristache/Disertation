@@ -1,19 +1,25 @@
+/**This styles the about us page*/
+
+
 html, body{
-	margin: 0;
-	padding: 0;
-	width:100%;
+margin: 0;
+padding: 0;
+width:100%;
 }
 
+
 body {
-    background-image:url("../images/9.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+ background-image:url("../images/9.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
 }
+
+
 html {
     height: 100%
 }
 
-
+/**This styles Ioana's box*/
 .box1{
 position:relative;
 max-width:600px;
@@ -29,7 +35,7 @@ color: #ffffff;
 left: 50px;
 
 }
-
+/**This styles Ioana's box*/
 .box1:after{
 position: absolute;
 width:50px;
@@ -45,7 +51,7 @@ transform: rotate(45deg);
 margin-top:-25px;
 
 }
-
+/**This styles Irina's box*/
 .box2{
 position:absolute;
 width:600px;
@@ -63,6 +69,7 @@ float: left;
 
 
 }
+/**This styles Irina's box*/
 .box2:after{
 position: absolute;
 width:50px;
@@ -79,12 +86,14 @@ margin-top:-25px;
 
 }
 
-
+/**This styles the pop up wrapper*/
 .popupBoxWrapper{
 width: 550px;
 margin: 50px auto; 
 text-align: left;
 }
+
+/**This styles the pop up content*/
 .popupBoxContent{
 background-color: #FFF; 
 padding: 15px;
@@ -98,6 +107,8 @@ border-radius: 4px;
 position: center;
 }
 
+
+/**This styles the pop up for Ioana*/
 #popupBoxOnePosition{
 top: 0; 
 left: 0;
@@ -107,6 +118,8 @@ background-color: rgba(0,0,0,0.7);
 display: none;
 				
 }
+
+/**This styles the pop up for Irina*/
 #popupBoxTwoPosition{
 top: 0;
 left: 0;
@@ -117,14 +130,13 @@ background-color: rgba(0,0,0,0.7);
 display: none;
 }
 
-
+/**This styles the close button */
 #close{
 position: relative;
-top;
 float: right;
 }
 
-
+/**This styles Ioana's picture*/
 #ioana{
 position:relative;
 margin-top:95px;
@@ -135,7 +147,7 @@ left: 60px;
 float:left;
 }
 
-
+/**This styles Irina's  picture */
 #irina{
 position:relative;
 margin-top:95px;

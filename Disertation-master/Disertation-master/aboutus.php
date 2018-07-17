@@ -10,7 +10,7 @@
 <!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
 	
-<!--This creates the pop up menu-->
+<!-- JS to create the pop up window-->
 <script type="text/javascript">
 			<!--
 			    function toggle_visibility(id) {
@@ -54,13 +54,16 @@ if(isset($_SESSION['image']))
 <!--This button allows to register with the website-->
 <button class="button button3"  onclick="document.location='register.php'">Register</button>
 
-<!--This  creates the text boxes-->
-
-
-
-
-		<div class="box1">Ioana David</div>
+<!--This  creates the text box for Ioana-->
+<div class="box1">Ioana David</div>
 <img  src="./images/20.jpg" id="ioana" alt="ioana" href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');"/>
+
+
+<!--This creates the text box for Irina-->
+<div class="box2">Irina Cristache</div>
+<img  src="./images/21.jpg" id="irina" alt="irina" href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');"/>
+
+<!--This creates the pop up window for Ioana-->
 <div id="popupBoxOnePosition">
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
@@ -72,9 +75,8 @@ if(isset($_SESSION['image']))
 		</div>
 
 
-	
-<div class="box2">Irina Cristache</div>
-<img  src="./images/21.jpg" id="irina" alt="irina" href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');"/>
+
+<!--This creates the pop up window for Irina-->
 <div id="popupBoxTwoPosition">
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
@@ -84,6 +86,10 @@ if(isset($_SESSION['image']))
 				</div>
 			</div>
 		</div>
+
+
+
+
 
 
 
