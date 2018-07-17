@@ -7,7 +7,7 @@
 	background-size: cover;
 	background-position: center;
 	font-family:sans-serif;
-	font-color: white;
+	color: white;
 	
  }
  /**Contact form*/
@@ -39,6 +39,7 @@
 	font-size: 18px;
 	margin-bottom:16px;
 	color: white;
+	font-family:sans-serif;
 }
 input{
 	height: 45px;
