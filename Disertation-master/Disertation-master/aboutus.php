@@ -55,29 +55,22 @@ if(isset($_SESSION['image']))
 <button class="button button3"  onclick="document.location='register.php'">Register</button>
 
 <!--This  creates the text boxes-->
-<div class="box1">Ioana David</div>
 
+
+
+
+		<div class="box1">Ioana David</div>
 <img  src="./images/20.jpg" id="ioana" alt="ioana" href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');"/>
-<div id="popupBoxOnePosition" class="pop">
-	<div class="popupBoxWrapper">
-		<div class="popupBoxContent">
-					<h3>Ioana David</h3>
-					<p>Insert Description here</p>
-					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">here</a> to close popup box one.<button id="close" onclick="document.getElementbyId('popupBoxOnePosition').style.display='none'">X</button><br></p>
-		</div>
-	</div>
-</div>
-
 <div id="popupBoxOnePosition">
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
-					<h3>Ioana David</h3>
+					<button id="close" onclick="toggle_visibility('popupBoxOnePosition');">X</button>
+					<h3><center> Ioana David</center></h3>
 					<p>Insert description here</p>
-					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">here</a> to close popup box one.</p>
 				</div>
 			</div>
-</div>
-		
+		</div>
+
 
 	
 <div class="box2">Irina Cristache</div>
@@ -85,9 +78,9 @@ if(isset($_SESSION['image']))
 <div id="popupBoxTwoPosition">
 			<div class="popupBoxWrapper">
 				<div class="popupBoxContent">
-					<h3>Irina Cristache</h3>
+				    <button id="close" onclick="toggle_visibility('popupBoxTwoPosition');">X</button>
+					<h3><center>Irina Cristache</center></h3>
 					<p>Insert description here</p>
-					<p>Click <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxTwoPosition');">here</a> to close popup box two.</p>
 				</div>
 			</div>
 		</div>
