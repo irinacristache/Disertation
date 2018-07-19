@@ -49,6 +49,12 @@
 				<button id="save">Save</button>
 				<button id="reset">Reset</button>
 				<input type="file" id="load" />
+				<input id="width" type="text" placeholder="Insert desired photo width"/><br>
+				<input id="height" type="text" placeholder="Insert desired photo height"/><br>
+				<input id="x" type="text" placeholder="X Starting position"/><br>
+				<input id="y" type="text" placeholder="Y Starting position"/><br>
+				<button id="preview">Preview</button>
+				<button id="crop">Crop</button>
 				<!--Slider Brightness-->
 				<p>
 					<label for="brightness">Brightness</label>

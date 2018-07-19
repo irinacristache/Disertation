@@ -163,5 +163,51 @@ submitText.onclick = applyText;
          context.fillText("My TEXT!", 20, 20);
      }; */
 
+//Preview Function
+function previewCrop() {
+  //Get the width parameter inserted by the user in the input box.
+  var width = Number(document.getElementById('width').value);
+  //Get the height parameter inserted by the user in the input box.
+  var height = Number(document.getElementById('height').value);
+  //Get the x parameter inserted by the user in the input box.
+  var x = Number(document.getElementById('x').value);
+  //Get the y parameter inserted by the user in the input box.
+  var y = Number(document.getElementById('y').value);
+  //Draw rectangle for cropping.
+  var canvas = document.getElementById('image');
+  var ctx = canvas.getContext('2d');
+  ctx.fillStyle = "rgba(0,0,0,0.5)";
+  ctx.fillRect(x,y,width,height);
+  
+  //Call reset canvas function to erase the preview box from the picture
+  setTimeout(function() {
+    resetButtonHandler();
+  },3000);
+};
+  
+  var preview = document.getElementById('preview');
+  preview.onclick = previewCrop;
+  
+  //Crop function
+  function cropImage() {
+    //Get the width parameter inserted by the user in the input box.
+  var width = Number(document.getElementById('width').value);
+  //Get the height parameter inserted by the user in the input box.
+  var height = Number(document.getElementById('height').value);
+  //Get the x parameter inserted by the user in the input box.
+  var x = Number(document.getElementById('x').value);
+  //Get the y parameter inserted by the user in the input box.
+  var y = Number(document.getElementById('y').value);
+  Caman('#image', function() {
+    this.crop(width, height, x, y);
+    this.render();
+    
+    });
+    
+    };
+    
+    var crop = document.getElementById('crop');
+    crop.onclick = cropImage;
+
     
 }, false);
