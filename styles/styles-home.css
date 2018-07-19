@@ -1,0 +1,33 @@
+
+
+body{
+	margin:0;
+	padding:0;
+	width:100%;
+	font-family:verdana;
+	/**background: linear-gradient(rgba(0,0,150,0.5), rgba(0,0,50,0.5)), url(../images/4.jpg);**/
+	/**background: linear-gradient(rgba(0,0,150,0.5), rgba(0,0,50,0.5)), url(../images/4.jpg);*/
+	background: url(../images/11.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	}
+html{
+	height:100%;
+}
+
+/**Styles the choose background box*/
+#chooseBg{
+position: absolute;
+margin-top: 20px;
+width: 300px;
+border: 1px solid;
+border-radius:4px;
+padding: 10px;
+color: #ffffff;
+background-color:#ff5722;
+}
+
+#chooseBg:hover {
+    background-color: #f44336;
+    color: white;
+

@@ -1,0 +1,169 @@
+/**This styles the about us page*/
+
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+html, body{
+margin: 0;
+padding: 0;
+width:100%;
+}
+
+
+body {
+ background-image:url("../images/9.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+
+
+html {
+    height: 100%
+}
+
+/**This styles Ioana's box*/
+.box1{
+position:relative;
+max-width:600px;
+margin-top:250px;
+height: auto;
+border:5px solid #f44336;
+padding: 30px;
+box-sizing:border-box;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+color: #ffffff;
+left: 50px;
+
+}
+/**This styles Ioana's box*/
+.box1:after{
+position: absolute;
+width:50px;
+height:50px;
+border-top: 5px solid #f44336;
+border-right: 5px solid #f44336 ;
+border-bottom: 5px solid #f44336;
+border-left: 5px solid #f44336;
+top:100%;
+left: 50%;
+content: '';
+transform: rotate(45deg);
+margin-top:-25px;
+
+}
+/**This styles Irina's box*/
+.box2{
+position:absolute;
+width:600px;
+margin-top:-110px;
+height: auto;
+left:50%;
+border:5px solid #f44336;
+padding: 30px;
+box-sizing:border-box;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+color: #ffffff;
+float: left;
+
+
+}
+/**This styles Irina's box*/
+.box2:after{
+position: absolute;
+width:50px;
+height:50px;
+border-top: 5px solid #f44336;
+border-right: 5px solid #f44336 ;
+border-bottom: 5px solid #f44336;
+border-left: 5px solid #f44336;
+top:100%;
+left: 50%;
+content: '';
+transform: rotate(45deg);
+margin-top:-25px;
+
+}
+
+/**This styles the pop up wrapper*/
+.popupBoxWrapper{
+width: 550px;
+margin: 50px auto; 
+text-align: left;
+
+
+}
+
+/**This styles the pop up content*/
+.popupBoxContent{
+background-color: #FFF; 
+padding: 15px;
+height: 700px;
+width: 670px;
+background-image: url("../images/22.jpg");
+background-size: 770px 770px;
+padding: 12px 20px;
+border-radius: 4px;
+position: center;
+border-style: inset;
+border: 5px dotted #000;
+box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+margin-bottom: 1px;
+font-family: 'Kalam';font-size: 22px;
+}
+
+
+/**This styles the pop up for Ioana*/
+#popupBoxOnePosition{
+top: 0; 
+left: 0;
+position: fixed;
+width: 100%; 
+background-color: rgba(0,0,0,0.7);
+display: none;
+				
+}
+
+/**This styles the pop up for Irina*/
+#popupBoxTwoPosition{
+top: 0;
+left: 0;
+position: fixed; 
+width: 100%;
+height: 120%;			
+background-color: rgba(0,0,0,0.7);
+display: none;
+}
+
+/**This styles the close button */
+#close{
+position: relative;
+float: right;
+color: black;
+border-color:black;
+}
+
+/**This styles Ioana's picture*/
+#ioana{
+position:relative;
+margin-top:95px;
+height:auto;
+width:600px;
+height:500px; 
+left: 60px;
+float:left;
+}
+
+/**This styles Irina's  picture */
+#irina{
+position:relative;
+margin-top:95px;
+height:auto;
+width:600px;
+height:500px; 
+left:18%;
+float:left;
+}
+
+
