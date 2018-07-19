@@ -36,10 +36,10 @@
 
 <!--This creates the top menu-->
 <div class="container1" align="center">
-			<li><a href="./home.php"class="cool-link">Home</a></li>
-			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
-			<li><a href="./contact.php"class="cool-link">Contact</a></li>
-			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
+			<li><a href="./home.php" class="cool-link">Home</a></li>
+			<li><a href="./gallery.php" class="cool-link">Gallery</a></li>
+			<li><a href="./contact.php" class="cool-link">Contact</a></li>
+			<li><a href="./aboutus.php" class="cool-link">About us</a></li>
 
 </div>
 
@@ -129,20 +129,20 @@
 				</p>
 	
 				<!--Buttons for filters-->
-				<button id="lomo"class="filter">Lomo</button>
-				<button id="clarity"class="filter">Clarity</button>
-				<button id="hazydays"class="filter">Smooth but Foggy</button>
-				<button id="herMajesty"class="filter">Pink</button>
-				<button id="love"class="filter">Red for Love</button>
-				<button id="crossProcess"class="filter">Purple Vibe</button>
-				<button id="orangePeel"class="filter">Orange</button>
-				<button id="glowingSun"class="filter">Yellow</button>
-				<button id="jarques"class="filter">Gray Area</button>
-				<button id="grungy"class="filter">Welcome to the Dark Side</button>
-				<button id="sinCity"class="filter">Black & White</button>
-				<button id="pinhole"class="filter">Black & White (Smooth)</button>
-				<button id="vintage"class="filter">Vintage</button>
-				<button id="sunrise"class="filter">Memories</button>
+				<button id="lomo" class="filter">Lomo</button>
+				<button id="clarity" class="filter">Clarity</button>
+				<button id="hazydays" class="filter">Smooth but Foggy</button>
+				<button id="herMajesty" class="filter">Pink</button>
+				<button id="love" class="filter">Red for Love</button>
+				<button id="crossProcess" class="filter">Purple Vibe</button>
+				<button id="orangePeel" class="filter">Orange</button>
+				<button id="glowingSun" class="filter">Yellow</button>
+				<button id="jarques" class="filter">Gray Area</button>
+				<button id="grungy" class="filter">Welcome to the Dark Side</button>
+				<button id="sinCity" class="filter">Black & White</button>
+				<button id="pinhole" class="filter">Black & White (Smooth)</button>
+				<button id="vintage" class="filter">Vintage</button>
+				<button id="sunrise" class="filter">Memories</button>
 				
 				<!--Add text over image-->
 				<h4>Add a message over your image:</h4>
