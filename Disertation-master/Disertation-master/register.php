@@ -45,32 +45,32 @@ if($numRows > 0)
 if(!preg_match("/^[a-zA-Z0-9_.+-]*@[a-zA-Z0-9]{1}[a-zA-Z0-9-]+[a-zA-Z0-9]{1}\.[a-zA-Z0-9-]+$/", $Email))
 {
 	$isOK = false;
-	$msgError = "The email address is not valid"; 
+	$msgError = "Adresa de email nu are un format corespunzator"; 
 }
 
 if(strlen($Password) < 8)
 {
 	$isOK = false;
-	$msgError = "The password must have at least 8 characters";
+	$msgError = "Lungimea parolei trebuie sa aiba minim 8 caractere";
 }
 
 if(!preg_match("/([a-z]+[A-Z]+)|([A-Z]+[a-z]+)/" , $Password))
 {
 	$isOK = false;
-	$msgError = "The password needs to be a combination of lowercase and uppercase letters";
+	$msgError = "Parola trebuie sa existe o combinatie de litere mari si mici";
 }
 
 if(!preg_match("/[0-9]+/", $Password))
 {
 	$isOK = false;
-	$msgError = "The password needs to contain at least a number";
+	$msgError = "Parola trebuie sa contina cel putin o cifra";
 }
 
 $Password= password_hash($_POST["Password"], PASSWORD_DEFAULT);
 
 if($isOK === true)
 {
-	$sql = "INSERT INTO Users (`FirstName`, `LastName`, Username, Mail, Password) VALUES (:firstName, :lastName, :uname, :email, :pass);";
+	$sql = "INSERT INTO users (`First Name`, `Last Name`, Username, Mail, Password) VALUES (:firstName, :lastName, :uname, :email, :pass);";
 	$handle = $conn->prepare($sql);
 	$handle->bindParam(":firstName", $FirstName);
 	$handle->bindParam(":lastName", $LastName);
@@ -80,7 +80,7 @@ if($isOK === true)
 	$handle->execute();
 	$conn = null;
 	
-	$msgSucces = "The account has been created";
+	$msgSucces = "User-ul a fost introdus cu succes";
 }
 }
 ?>
@@ -97,7 +97,7 @@ if($isOK === true)
 
 <!--This create the top men-->
 <div class="container1" align="center">
-			<li><a href="./index.php"class="cool-link">Home</a></li>
+			<li><a href="./home.php"class="cool-link">Home</a></li>
 			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
 			<li><a href="./contact.php"class="cool-link">Contact</a></li>
 			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
@@ -108,7 +108,7 @@ if($isOK === true)
 <div class="registration-title">
     <h1>Create an account</h1>
 </div>
-    <form id="registration-form" class="form" action="register.php" onclick="login.php" method="post" >
+    <form id="registration-form" class="form" action="register.php" method="post" >
 	  <input type="text"class="form-control" name="FirstName" placeholder="Firstname" value="<?php print $FirstName; ?>" required/>
 	  <input type="text" class="form-control" name="LastName" placeholder="Lastname" value="<?php print $LastName; ?>" required/>
 	  <input type="text" class="form-control" placeholder="Username"  name="Username" value="<?php print $Username; ?>" required />

@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		if($isAllGood === 1) {
 			$conn = connect();
 			
-			$stm = $conn->prepare("Select Password From Users where Username = :user");
+			$stm = $conn->prepare("Select Password From users where Username = :user");
 			$stm->bindParam(':user', $user);
 			$stm->execute();
 			
@@ -69,7 +69,7 @@ else if ($_SESSION['loggedIn'] == 1)
 
 <!--This creates the top menu-->
 <div class="container1" align="center">
-			<li><a href="./index.php"class="cool-link">Home</a></li>
+			<li><a href="./home.php"class="cool-link">Home</a></li>
 			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
 			<li><a href="./contact.php"class="cool-link">Contact</a></li>
 			<li><a href="./aboutus.php"class="cool-link">About us</a></li>

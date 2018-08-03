@@ -36,7 +36,7 @@
 
 <!--This creates the top menu-->
 <div class="container1" align="center">
-			<li><a href="./index.php" class="cool-link">Home</a></li>
+			<li><a href="./home.php" class="cool-link">Home</a></li>
 			<li><a href="./gallery.php" class="cool-link">Gallery</a></li>
 			<li><a href="./contact.php" class="cool-link">Contact</a></li>
 			<li><a href="./aboutus.php" class="cool-link">About us</a></li>
@@ -67,6 +67,18 @@
 					<input id="vibrance" name="vibrance" type="range" min=-100 max=100 value=0>
 
 				</p>
+				<!--Slider Hue-->
+				<p>
+					<label for="hue">Hue</label>
+					<input id="hue" name="hue" type="range" min=-100 max=100 value=0>
+	
+				</p>
+				<!--Slider Gamma-->
+				<p>
+					<label for="gamma">Gamma</label>
+					<input id="gamma" name="gamma" type="range" min=-0 max=10 value=0>
+	
+				</p>
 				
 				<!--Slider Contrast-->
 				<p>
@@ -91,22 +103,57 @@
 					<label for="exposure">Exposure</label>
 					<input id="exposure" name="exposure" type="range" min=-100 max=100 value=0>
 				</p>
+				
+				<!--Slider Noise-->
+				<p>
+					<label for="noise">Noise</label>
+					<input id="noise" name="noise" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Sepia-->
+				<p>
+					<label for="sepia">Sepia</label>
+					<input id="sepia" name="sepia" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider Clip-->
+				<p>
+					<label for="clip">Clip</label>
+					<input id="clip" name="clip" type="range" min=-100 max=100 value=0>
+				</p>
+				
+				<!--Slider stackBlur-->
+				<p>
+					<label for="stackBlur">stackBlur</label>
+					<input id="stackBlur" name="stackBlur" type="range" min=-100 max=100 value=0>
+				</p>
 	
 				<!--Buttons for filters-->
-				<p><button id="lomo" class="filter">Lomo</button></p>
+				<button id="lomo" class="filter">Lomo</button>
 				<button id="clarity" class="filter">Clarity</button>
-				<p><button id="hazydays" class="filter">Smooth but Foggy</button></p>
+				<button id="hazydays" class="filter">Smooth but Foggy</button>
+				<button id="herMajesty" class="filter">Pink</button>
+				<button id="love" class="filter">Red for Love</button>
+				<button id="crossProcess" class="filter">Purple Vibe</button>
+				<button id="orangePeel" class="filter">Orange</button>
+				<button id="glowingSun" class="filter">Yellow</button>
+				<button id="jarques" class="filter">Gray Area</button>
+				<button id="grungy" class="filter">Welcome to the Dark Side</button>
+				<button id="sinCity" class="filter">Black & White</button>
+				<button id="pinhole" class="filter">Black & White (Smooth)</button>
+				<button id="vintage" class="filter">Vintage</button>
 				<button id="sunrise" class="filter">Memories</button>
-	
 				
-				<!--Message-->
-				<h4>For our colour themed filters and premium effects, please create an account.</h4>
+				<!--Add text over image-->
+				<h4>Add a message over your image:</h4>
+				<input type="text" id="message" placeholder="Type a message">
+				<button id="submit">Add Text</button>
+				
 			</div>
 				<img id="image" class="img" src="./images/19.png">
 		</div>
 		
-	<!--The button which allows to register with the website-->
-	<button class="button button3"  onclick="document.location='register.php'">Register</button>	
+		
 <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
     <a class="a2a_button_facebook"></a>
     <a class="a2a_button_twitter"></a>
