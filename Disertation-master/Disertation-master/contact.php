@@ -10,6 +10,14 @@
 	
 <!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
+	
+<!--Confirmation box for succesfull message-->
+<script>
+function confirmation() {
+    alert("Thank you for your message!");
+}
+</script>
+
 </head>
 <body>
 
@@ -26,7 +34,7 @@ if(isset($_SESSION['image']))
 
 <!--This creates the top menu-->
 <div class="container1">
-			<li><a href="./home.php"class="cool-link">Home</a></li>
+			<li><a href="./index.php"class="cool-link">Home</a></li>
 			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
 			<li><a href="./contact.php"class="cool-link">Contact</a></li>
 			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
@@ -41,8 +49,8 @@ if(isset($_SESSION['image']))
 		<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
 		<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
 		<textarea name="message" class="form-control" placeholder="Message"rows="4" required></textarea><br>
-		<input button type="submit" class="form-control submit" value="SEND MESSAGE">
-</form>
+		<input button type="submit" class="form-control submit" value="SEND MESSAGE" onclick="confirmation()">
+</form
 </div>
 	<!--This button allows access to the editing app-->
 	<button class="button button1" onclick="document.location='editor.php'">Let's edit</button>
