@@ -10,6 +10,29 @@
 	
 <!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
+	
+<!--Confirmation box for succesfull message-->
+<script>
+function confirmation() {
+    alert("Thank you for your message!");
+}
+</script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	
+	<!--JQuery for the menu-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	 <script type="text/javascript">
+	  $(document).ready(function(){
+		  $(".menu-icon").click(function(){
+			$(".menu-icon").toggleClass("active")
+		  })
+		  
+		  $(".menu-icon").click(function(){
+			$(".sidebar").toggleClass("active")
+		  })
+	   })
+	   </script>
+
 </head>
 <body>
 
@@ -25,13 +48,27 @@ if(isset($_SESSION['image']))
 
 
 <!--This creates the top menu-->
-<div class="container1">
-			<li><a href="./home.php"class="cool-link">Home</a></li>
-			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
-			<li><a href="./contact.php"class="cool-link">Contact</a></li>
-			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
+	<!--This creates the top menu<-->
+		<div class="menu-icon">
 		
-</div>
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<div class="sidebar">
+		<ul class="menu">
+		   <li><a href="./index.php">Home</a><li>
+		   <li><a href="./aboutus.php">About us</a><li>
+		   <li><a href="./gallery.php">Gallery</a><li>
+		   <li><a href="./contact.php">Contact</a><li>
+		   <li><a href="./register.php">Register</a><li>
+		   <li><a href="./login.php">Log in</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
+		   <li><a href="./personalise.php">Customise the website</a><li>
+		</ul>
+		
+		
+		</div>
 <!--This creates the contact form -->
 <div class="contact-title">
 		<h1>Feel free to contact us!</h1>
@@ -41,14 +78,11 @@ if(isset($_SESSION['image']))
 		<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
 		<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
 		<textarea name="message" class="form-control" placeholder="Message"rows="4" required></textarea><br>
-		<input button type="submit" class="form-control submit" value="SEND MESSAGE">
+		<input button type="submit" class="form-control submit" value="SEND MESSAGE" onclick="confirmation()">
 </form>
 </div>
-	<!--This button allows access to the editing app-->
-	<button class="button button1" onclick="document.location='editor.php'">Let's edit</button>
-	<!--This button allows to log in into the website-->
-	<button class="button button2"  onclick="document.location='login.php'" >Log in</button>
-	<!--This button allows to register with the website-->
-	<button class="button button3"  onclick="document.location='register.php'">Register</button>
-	</body>
+<!--The button that allows the user to access the editing app-->
+<button class="button button1" onclick="document.location='register.php'">Register</button>
+
+</body>
 </html>

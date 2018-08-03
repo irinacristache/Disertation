@@ -152,7 +152,6 @@ if(isset($_SESSION['image']))
 
 <div class="container">
 	
-<h1>Try our editor</h1>
 <!--Deals with the bird animation -->
 <div class="bird-container">
 		<div class="bird"></div>
@@ -167,22 +166,21 @@ if(isset($_SESSION['image']))
 		</div>
 		<div class="sidebar">
 		<ul class="menu">
-		   <li><a href="./home.php">Home</a><li>
+		   <li><a href="./index.php">Home</a><li>
 		   <li><a href="./aboutus.php">About us</a><li>
 		   <li><a href="./gallery.php">Gallery</a><li>
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
+		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
 		</div>
 		
 	<!--The button which allows to access the editing app-->
-	<button class="button button5" onclick="document.location='editor.php'">Let's edit!</button>-->
-	<!--The button that allows to log in into the website-->
-	<!--<button class="button button2"  onclick="document.location='login.php'" >Log in</button>
-	--><!--The button which allows to register with the website-->
-	<!--<button class="button button3"  onclick="document.location='register.php'">Register</button> -->
+	<button class="button button5" onclick="document.location='editor.php'">Try our editor!</button>-->
+
 	
 	<!--Choose Background image-->
 	<!--<div id="chooseBg" >

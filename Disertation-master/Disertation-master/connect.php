@@ -3,10 +3,10 @@
 // connects to the database
 function connect()
 {		
-    $host = 'localhost';
-    $dbname = 'Photo_Editor';
-    $user = 'root';
-    $pwd = '';
+    $host = 'dragon.ukc.ac.uk';
+    $dbname = 'id89';
+    $user = 'id89';
+    $pwd = 'ffeas1';
         try {
             $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pwd);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
