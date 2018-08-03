@@ -140,19 +140,4 @@ h1 {
 }
 
 
-/**Styles the choose background box*/
-#chooseBg{
-position: absolute;
-margin-top: 20px;
-width: 300px;
-border: 1px solid;
-border-radius:4px;
-padding: 10px;
-color: #ffffff;
-background-color:#ff5722;
-}
-
-#chooseBg:hover {
-    background-color: #f44336;
-    color: black;
 

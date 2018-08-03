@@ -16,7 +16,7 @@ html{
 }
 
 /**The slideshow*/
-#i1, #i2, #i3{ display: none;}
+#i1, #i2, #i3, i4,i5{ display: none;}
 
 .container2{
 		margin: 0 auto;
@@ -102,12 +102,16 @@ html{
 
 	#i1:checked ~ #one  ,
 	#i2:checked ~ #two  ,
-	#i3:checked ~ #three 
+	#i3:checked ~ #three,
+	#i4:checked ~ #four,
+	#i5:checked ~ #five
 	{z-index: 9; animation: scroll 1s ease-in-out;}
 
 	#i1:checked  ~  #nav_slide #dot1,
 	#i2:checked  ~  #nav_slide #dot2,
-	#i3:checked  ~  #nav_slide #dot3
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5
 	{ background-color: rgba(255,255,255,.9);}
 
 @keyframes scroll{
