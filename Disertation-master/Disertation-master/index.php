@@ -172,7 +172,8 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Editor</a><li>
+		   <li><a href="./editor.php">Standard Editor</a><li>
+		   <li><a href="./myaccount.php">Premium Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		

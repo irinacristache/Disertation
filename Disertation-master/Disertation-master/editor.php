@@ -77,7 +77,8 @@
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Editor</a><li>
+		   <li><a href="./editor.php">Standard Editor</a><li>
+		   <li><a href="./myaccount.php">Premium Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
@@ -138,12 +139,17 @@
 				<button id="clarity" class="filter">Clarity</button>
 				<p><button id="hazydays" class="filter">Smooth but Foggy</button></p>
 				<button id="sunrise" class="filter">Memories</button>
-	
+				<p><button id="herMajesty" class="filter">Pink</button></p>
+				<p><button id="love" class="filter">Red for Love</button></p>
+				<p><button id="crossProcess" class="filter">Purple Vibe</button></p>
 				
-				<!--Message-->
-				<h4>For our colour themed filters and premium effects, please create an account.</h4>
+				<!--Add text over image-->
+				<h4>Add a message over your image:</h4>
+				<input type="text" id="message" placeholder="Type a message">
+				<button id="submit">Add Text</button>
+				
 			</div>
-				<img id="image" class="img" src="./images/19.png">
+				<img id="image" class="img" src="./images/27.png">
 		</div>
 		
 	<!--The button which allows to register with the website-->

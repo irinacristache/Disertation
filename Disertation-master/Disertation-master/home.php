@@ -31,6 +31,8 @@ if(isset($_SESSION['image']))
 			<li><a href="./home.php"class="cool-link">Home</a></li>
 			<li><a href="./gallery.php"class="cool-link">Gallery</a></li>
 			<li><a href="./contact.php"class="cool-link">Contact</a></li>
+			<li><a href="./editor.php">Standard Editor</a><li>
+		   <li><a href="./myaccount.php">Premium Editor</a><li>
 			<li><a href="./aboutus.php"class="cool-link">About us</a></li>
 		</div>
 		
