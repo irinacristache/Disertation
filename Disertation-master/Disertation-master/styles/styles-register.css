@@ -10,7 +10,7 @@ html, body{
   
 } 
 
-/**The registration form*/
+/**The registration for */
 .registration-title{
 	 margin-top:100px;
 	 color:white;
@@ -22,7 +22,7 @@ html, body{
 	line-height: 10px;
  }
  form{
-	margin-top: 50px;
+	margin-top: 50px; 
 	transition: all 4s ease-in-out;
 	
  }

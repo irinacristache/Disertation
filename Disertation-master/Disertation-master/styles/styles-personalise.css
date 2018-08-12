@@ -8,9 +8,11 @@ body{
 
 /**Styles the choose background box*/
 #chooseBg{
-position: absolute;
+position: fixed;
+top: 10%;
+left:30%;
 align:centre;
-width: 300px;
+width: 500px;
 border: 1px solid;
 border-radius:4px;
 padding: 10px;
