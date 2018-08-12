@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Contact us</title>
+	
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-contact.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	
@@ -17,6 +19,8 @@ function confirmation() {
     alert("Thank you for your message!");
 }
 </script>
+
+<!--Import for the menu-->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!--JQuery for the menu-->
@@ -36,9 +40,9 @@ function confirmation() {
 </head>
 <body>
 
-<!--Mantains the session for the background image-->
-<?php
 
+<?php
+//Maintains background session
 session_start();
 if(isset($_SESSION['image']))
 {
@@ -46,8 +50,6 @@ if(isset($_SESSION['image']))
 }
 ?>
 
-
-<!--This creates the top menu-->
 	<!--This creates the top menu<-->
 		<div class="menu-icon">
 		

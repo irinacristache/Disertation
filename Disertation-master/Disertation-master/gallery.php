@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Gallery</title>
+	
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-gallery.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!-- JQuery imported-->
@@ -32,9 +37,9 @@
 </head>
 
 <body>
-<!--Mantains the session for the background image-->
-<?php
 
+<?php
+//Maintains background session
 session_start();
 if(isset($_SESSION['image']))
 {
@@ -57,8 +62,7 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Standard Editor</a><li>
-		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		

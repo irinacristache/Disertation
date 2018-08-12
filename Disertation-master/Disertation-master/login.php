@@ -1,5 +1,11 @@
+
+<!--Imports JS for alert box-->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 <?php
+//the log in system 
+
 include 'connect.php';
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -80,6 +86,14 @@ else if ($_SESSION['loggedIn'] == 1)
 		  })
 	   })
 	   </script>
+	   <?php
+	   //Maintains background session
+session_start();
+if(isset($_SESSION['image']))
+{
+	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
+}
+?>
 </head>
 	
 
@@ -111,6 +125,10 @@ else if ($_SESSION['loggedIn'] == 1)
 <div class="registration-title">
     <h1>Log in</h1>
 </div>
+
+<!--Log-in form-->
+<div class="registration-form">
+
     <form id="registration-form" class="form" action="login.php" method="post" autocomplete="off">
 	  <input type="text" class="form-control" placeholder="Username" name="username" required />
       <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="new-password" required />
@@ -118,6 +136,9 @@ else if ($_SESSION['loggedIn'] == 1)
       <button type="submit" class="form-control submit" value="Log in" name="LogInBtn">Log In</button>
     </form>
 </div>
+</div>
+
+
 <!--The button that allows the user to access the editing app-->
 <button class="button button1" onclick="document.location='register.php'">Register</button>
 

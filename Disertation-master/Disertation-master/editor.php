@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--This editor is the standard one, the one does not require registering-->
+
 	<title>Photo editor</title>
+	
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-editor.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	<!--Import JS libraries -->
 	<script type="text/javascript" src="editor-main.js"></script>
 	<script type="text/javascript" src="caman.full.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
 	<script type ="text/javascript">
 		
 		$(function () {
@@ -21,11 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
-	<!-- JQuery imported-->
-	<script type="text/javascript" src="jquery-changebg.js"></script>
 	
-	<!-- The function to allow a user to change the background image-->
-	<script type="text/javascript" src="changebg.js"></script>
 	<!--JQuery for the menu-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	 <script type="text/javascript">
@@ -39,19 +42,13 @@
 		  })
 	   })
 	   </script>
-	<!-- JQuery imported-->
-	<script type="text/javascript" src="jquery-changebg.js"></script>
 	
-	<!-- The function to allow a user to change the background image-->
-	<script type="text/javascript" src="changebg.js"></script>
 </head>
 	
 </head>
 
 <body>
 	
-
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -77,8 +74,7 @@
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Standard Editor</a><li>
-		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
@@ -139,17 +135,12 @@
 				<button id="clarity" class="filter">Clarity</button>
 				<p><button id="hazydays" class="filter">Smooth but Foggy</button></p>
 				<button id="sunrise" class="filter">Memories</button>
-				<p><button id="herMajesty" class="filter">Pink</button></p>
-				<p><button id="love" class="filter">Red for Love</button></p>
-				<p><button id="crossProcess" class="filter">Purple Vibe</button></p>
+	
 				
-				<!--Add text over image-->
-				<h4>Add a message over your image:</h4>
-				<input type="text" id="message" placeholder="Type a message">
-				<button id="submit">Add Text</button>
-				
+				<!--Message-->
+				<h4>For our colour themed filters and premium effects, please create an account.</h4>
 			</div>
-				<img id="image" class="img" src="./images/27.png">
+				<img id="image" class="img" src="./images/19.png">
 		</div>
 		
 	<!--The button which allows to register with the website-->

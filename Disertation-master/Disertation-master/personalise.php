@@ -4,9 +4,12 @@
 <html>
 <head>
 
-	<title>Home </title>
+	<title>Customise the website </title>
+	<!--Imports the CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-personalise.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!-- JQuery imported-->
@@ -51,9 +54,14 @@
 <!--Choose Background image-->
 	<div id="chooseBg" >
 	<center><p>Choose your background image!</p></center>
-	<a href="#" onclick="changeImage(9);"><img src="./images/9.jpg" width="85" height="85"/></a>
-	<a href="#"onclick="changeImage(5);"><img src="./images/5.jpg" width="85" height="85"></a>
-	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="85" height="85"><br></a>
+	<a href="#" onclick="changeImage(3);"><img src="./images/3.jpg" width="120" height="120"/></a>
+	<a href="#"onclick="changeImage(5);"><img src="./images/5.jpg" width="120" height="120"></a>
+	<a href="#"onclick="changeImage(1);"><img src="./images/1.jpg" width="120" height="120"></a>
+	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="120" height="120"><br></a>
+	<a href="#"onclick="changeImage(7);"><img src="./images/7.jpg" width="120" height="120"></a>
+	<a href="#"onclick="changeImage(16);"><img src="./images/16.jpg" width="120" height="120"></a>
+	<a href="#"onclick="changeImage(2);"><img src="./images/2.jpg" width="120" height="120"></a>
+	<a href="#"onclick="changeImage(13);"><img src="./images/13.jpg" width="120" height="120"><br></a>
 	<center><a href="#" onclick="clearImage();">Clear Image</a></center>
 	</div> 
 </body>

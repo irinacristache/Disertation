@@ -4,8 +4,11 @@
 <head>
 
 	<title>Home </title>
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-index.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!-- JQuery imported-->
@@ -13,6 +16,7 @@
 	
 	<!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
+	
 	<!--JQuery for the menu-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	 <script type="text/javascript">
@@ -30,7 +34,7 @@
 <body>
 
 <?php
-
+//Maintains background session
 session_start();
 if(isset($_SESSION['image']))
 {
@@ -172,25 +176,15 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Standard Editor</a><li>
-		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
 		</div>
 		
 	<!--The button which allows to access the editing app-->
-	<button class="button button5" onclick="document.location='editor.php'">Try our editor!</button>-->
+	<button class="button button5" onclick="document.location='editor.php'; alert('For a better user experience, please use Chrome or Microsoft Edge!');">Try our editor!</button>-->
 
-	
-	<!--Choose Background image-->
-	<!--<div id="chooseBg" >
-	<center><p>Choose your background image!</p></center>
-	<a href="#" onclick="changeImage(9);"><img src="./images/9.jpg" width="85" height="85"/></a>
-	<a href="#"onclick="changeImage(5);"><img src="./images/5.jpg" width="85" height="85"></a>
-	<a href="#"onclick="changeImage(15);"><img src="./images/15.jpg" width="85" height="85"><br></a>
-	<center><a href="#" onclick="clearImage();">Clear Image</a></center>
-	</div> -->
 
 
 

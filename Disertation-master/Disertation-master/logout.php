@@ -12,8 +12,12 @@ header("Location: index.php");
 <html>
 <head>
 	<title>Login</title>
+	
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-logout.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!-- JQuery imported-->

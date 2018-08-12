@@ -1,5 +1,6 @@
 
 <?php
+//the registration system
 session_start();
 
 $FirstName = $LastName = $Username = $Email = "";
@@ -27,8 +28,8 @@ if (empty($FirstName) || empty($LastName) || empty($Password) || empty($Email)) 
 	header ("Location: ../register.php?signup=empty");
 }
 
-//Validare
-//Daca exista user
+//Validation
+//If users exists
 
 $handle = $conn->prepare("Select count(*) from Users Where Username = :usr;");
 $handle->bindParam(":usr", $Username);
@@ -39,7 +40,7 @@ $numRows = $handle->fetchColumn();
 if($numRows > 0)
 {
 	$isOK = false;
-	$msgError = "User-ul deja exista";
+	$msgError = "The user already exists";
 }
 
 if(!preg_match("/^[a-zA-Z0-9_.+-]*@[a-zA-Z0-9]{1}[a-zA-Z0-9-]+[a-zA-Z0-9]{1}\.[a-zA-Z0-9-]+$/", $Email))
@@ -83,14 +84,21 @@ if($isOK === true)
 	$msgSucces = "The account has been created";
 }
 }
+
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Register</title>
+	
+	
+	
+	<!--Imports CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-register.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
-
+	
+	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!-- JQuery imported-->
@@ -98,6 +106,16 @@ if($isOK === true)
 	
 	<!-- The function to allow a user to change the background image-->
 	<script type="text/javascript" src="changebg.js"></script>
+	
+	<?php //Maintains background session
+session_start();
+if(isset($_SESSION['image']))
+{
+	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
+}
+	
+?>
+	
 	<!--JQuery for the menu-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	 <script type="text/javascript">
@@ -111,21 +129,15 @@ if($isOK === true)
 		  })
 	   })
 	   </script>
+	   
+	   
+
+	   
 </head>
 
+
 <body>
-	<!--Mantains the session for the background image-->
-<?php
-
-if(isset($_SESSION['image']))
-{
-	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
-}
-?>
-
-<!--This create the top men-->
-
-</div>
+	
 
 		<!--This creates the top menu<-->
 		<div class="menu-icon">
@@ -142,24 +154,29 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Standard Editor</a><li>
-		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
 		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
 		</div>
+		
+		
+		
 <!--This creates the registration form-->
 <div class="registration-title">
     <h1>Create an account</h1>
 </div>
+
+<!--Creates the registration form -->
+<div class="registration-form">
     <form id="registration-form" class="form" action="register.php" onclick="login.php" method="post" >
 	  <input type="text"class="form-control" name="FirstName" placeholder="Firstname" value="<?php print $FirstName; ?>" required/>
 	  <input type="text" class="form-control" name="LastName" placeholder="Lastname" value="<?php print $LastName; ?>" required/>
 	  <input type="text" class="form-control" placeholder="Username"  name="Username" value="<?php print $Username; ?>" required />
       <input type="email" class="form-control" placeholder="Email"  name="Email" value="<?php print $Email; ?>" required />
       <input type="password" class="form-control" placeholder="Password" name="Password" autocomplete="new-password" required />
-      <!--<input type="password"class="form-control" placeholder="Confirm Password" name="password_2" autocomplete="new-password" required />-->
-      <!--<div class="avatar"><label>Select your avatar: </label><input type="file" name="avatar" accept="image/*" required /></div>-->
+	  
+	  <!--If anything goes wrong-->
 	  <div class="ErrMsg">
 		<?php print $msgError; ?>
 	  </div>
@@ -168,6 +185,7 @@ if(isset($_SESSION['image']))
 	  </div>
       <input type="submit" class="form-control submit" value="Register" name="Register" />
     </form>
+	
 	<?php
 	$fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	

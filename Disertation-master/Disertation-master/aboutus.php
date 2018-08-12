@@ -2,8 +2,13 @@
 <html>
 <head>
 <title>About us</title>
+
+
 <link rel="stylesheet" type="text/css" href="./styles/styles-aboutus.css">
 <link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+
+
+
 <!-- JQuery imported-->
 	<script type="text/javascript" src="jquery-changebg.js"></script>
 	
@@ -22,7 +27,8 @@
 			    }
 			//-->
 </script>
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<!--Import for the menu-->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	<!--JQuery for the menu-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -38,19 +44,21 @@
 	   })
 	   </script>
 </head>
+
+
+
+
 <body>
 
-<!--Mantains the session for the background image-->
-<?php
 
+<?php
+//Maintains background session
 session_start();
 if(isset($_SESSION['image']))
 {
 	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
 }
 ?>
-
-
 
 
 <!--This creates the top menu-->
@@ -68,8 +76,7 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Standard Editor</a><li>
-		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./editor.php">Editor</a><li>
 		     <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
@@ -107,11 +114,7 @@ if(isset($_SESSION['image']))
 				<div class="popupBoxContent">
 				    <button id="close" onclick="toggle_visibility('popupBoxTwoPosition');">X</button>
 					<h3><center>Irina Cristache</center></h3>
-					<p>Thank you for stopping by! My passion for photography started a few years ago.</p>
-					<p>I spent a lot of time trying to find the perfect photo editor but I failed.</p>
-					<p>So I learned how to code and made my own.</p>
-					<p>I am a Conversion MSc Student at the University of Kent.</p>
-					<p>I am passionate about web design and front end development</p>
+					<p>Insert description here</p>
 				</div>
 			</div>
 		</div>
