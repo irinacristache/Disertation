@@ -101,7 +101,10 @@ if(isset($_SESSION['image']))
 				<div class="popupBoxContent">
 					<button id="close" onclick="toggle_visibility('popupBoxOnePosition');">X</button>
 					<h3><center> Ioana David</center></h3>
-					<p>Insert description here</p>
+					<p>I have BSc in International Relations and American Studies and I am currently doing a masters in Computer Science at University of Kent. 
+					During my undergraduate and postgraduate degree, I have tried to combine studying with part-time working which has helped me develop  numerous skills such as time-management, project-management, customer experience, communication or working in a team.
+					I decided to do a masters in Computer Science because  I believed it would be a great opportunity to develop the IT skills needed to develop  a career in either digital marketing or consulting.
+					</p>
 				</div>
 			</div>
 		</div>
