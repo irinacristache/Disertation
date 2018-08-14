@@ -90,7 +90,6 @@ list-style-type:none;
 
 /**The main buttons*/
 .button {
-    background-color: #f44336;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -105,24 +104,26 @@ list-style-type:none;
 }
 /**The button on the corner left*/
 .button1 {
- background-color: #ff5722; 
-    color: white; 
-	/**position: relative;
-	top: 0%;
-	left: 40%; */
 	position:absolute;
 	right:85%;
-	top: 5%;
-	width: 150px;
-	height: 60px;
-	border: 1px solid white;
-	font-size: 18px;
+	top: 2%;
+	background-color: Transparent; 
+    color: white; 
+	width: auto;
+	height:auto;
 	border-radius:4px;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 3rem;
+	font-weight: bold;
+	letter-spacing: -3px;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	z-index: 3;
 }
 
 .button1:hover {
-    background-color: #f44336;
-    color: white;
+    background-color: Transparent;
+	border:Transparent;
+    color: #ff5722;
 }
 
 
