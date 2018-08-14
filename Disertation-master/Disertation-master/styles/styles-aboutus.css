@@ -23,7 +23,7 @@ html {
 .box1{
 position:relative;
 max-width:600px;
-margin-top:250px;
+margin-top:50px;
 height: auto;
 border:5px solid #f44336;
 padding: 30px;
@@ -55,7 +55,7 @@ margin-top:-25px;
 .box2{
 position:absolute;
 width:600px;
-margin-top:-110px;
+margin-top:-130px;
 height: auto;
 left:50%;
 border:5px solid #f44336;
@@ -147,22 +147,22 @@ border-color:black;
 /**This styles Ioana's picture*/
 #ioana{
 position:relative;
-margin-top:95px;
+margin-top:50px;
 height:auto;
-width:600px;
-height:500px; 
-left: 60px;
+width:400px;
+height:400px; 
+left: 90px;
 float:left;
 }
 
 /**This styles Irina's  picture */
 #irina{
 position:relative;
-margin-top:95px;
+margin-top:50px;
 height:auto;
-width:600px;
-height:500px; 
-left:18%;
+width:400px;
+height:400px; 
+left:30%;
 float:left;
 }
 
