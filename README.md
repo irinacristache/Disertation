@@ -9,3 +9,8 @@ the contact form, last name with 2 words
 !!!personalise page
 !!!design about us page
 !!!corpus, table of contents and nicely organised
+
+
+ the registration page does not redirect you properly
+ php sessions error messages
+ php  code on the my account page
