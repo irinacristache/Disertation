@@ -124,7 +124,9 @@ list-style-type:none;
     background-color: #f44336;
     color: white;
 }
-/
+
+
+/***/
 
 
 .button3{
@@ -188,7 +190,9 @@ list-style-type:none;
 }
 
 .button5:hover {
-    background-color: #f44336;
+
+background-color:Transparent;
+}
    
 /**Styles for the gallery */
 
