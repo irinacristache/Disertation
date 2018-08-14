@@ -44,7 +44,7 @@ if(isset($_SESSION['image']))
 
 
 
-<!-- The vector used  to displayed when the page is loading -->
+<!-- The vector used  to displayed when the page is loading-->
 <div class="loader">
 
 <svg x="0" y="0" width="258" height="258">
@@ -183,8 +183,7 @@ if(isset($_SESSION['image']))
 		</div>
 		
 	<!--The button which allows to access the editing app-->
-	<button class="button button5" onclick="document.location='editor.php'; alert('For a better user experience, please use Chrome or Microsoft Edge!');">Try our editor!</button>-->
-
+	<button class="button button5" onclick="document.location='editor.php'; alert('For a better user experience, please use Chrome or Microsoft Edge!');">Try our editor!</button>
 
 
 
