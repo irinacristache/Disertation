@@ -144,7 +144,7 @@
 		</div>
 		
 	<!--The button which allows to register with the website-->
-	<button class="button button1"  onclick="document.location='register.php'">Register</button>
+	<button class="button button1"  onclick="document.location='register.php'">Register for more filters!</button>
 
 
 
