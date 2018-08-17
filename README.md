@@ -1,16 +1,10 @@
 # Disertation
-To do list 3.08.2018
-the menu bar in the gallery
-the log in page works really hard(it might be from my computer)
+
+To do list 17.08.2018
+
+
 the contact form, last name with 2 words
-2  my account styles sheets
-
-
-!!!personalise page
-!!!design about us page
-!!!corpus, table of contents and nicely organised
-
-
- the registration page does not redirect you properly
- php sessions error messages
- php  code on the my account page
+the registration page does not redirect you properly
+php  code on the my account page
+ editor standard vs premium
+  change background function for the editor page
