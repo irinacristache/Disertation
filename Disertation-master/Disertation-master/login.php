@@ -88,7 +88,7 @@ else if ($_SESSION['loggedIn'] == 1)
 	   </script>
 	   <?php
 	   //Maintains background session
-session_start();
+//session_start();
 if(isset($_SESSION['image']))
 {
 	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';

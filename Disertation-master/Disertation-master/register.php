@@ -55,10 +55,10 @@ if(strlen($Password) < 8)
 	$msgError = "The password must have at least 8 characters";
 }
 
-if(!preg_match("/([a-z]+[A-Z]+)|([A-Z]+[a-z]+)/" , $Password))
+if(!preg_match("/([a-z]+[A-Z]+)||([A-Z]+[a-z]+)/" , $Password))
 {
 	$isOK = false;
-	$msgError = "The password needs to be a combination of lowercase and uppercase letters";
+	$msgError = "The password needs to be a combination of lowercase,uppercase letters";
 }
 
 if(!preg_match("/[0-9]+/", $Password))
@@ -108,7 +108,7 @@ if($isOK === true)
 	<script type="text/javascript" src="changebg.js"></script>
 	
 	<?php //Maintains background session
-session_start();
+//session_start();
 if(isset($_SESSION['image']))
 {
 	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';

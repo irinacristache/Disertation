@@ -11,11 +11,7 @@
 	<!--Import for the menu-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
-	<!-- JQuery imported-->
-	<script type="text/javascript" src="jquery-changebg.js"></script>
 	
-	<!-- The function to allow a user to change the background image-->
-	<script type="text/javascript" src="changebg.js"></script>
 	
 	<!--JQuery for the menu-->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -33,14 +29,7 @@
 </head>
 <body>
 
-<?php
-//Maintains background session
-session_start();
-if(isset($_SESSION['image']))
-{
-	echo '<script type="text/javascript">changeImage('.$_SESSION['image'].')</script>';
-}
-?>
+
 
 
 

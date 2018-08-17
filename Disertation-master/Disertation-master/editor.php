@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/styles-editor.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	
+	
 	<!--Import JS libraries -->
 	<script type="text/javascript" src="editor-main.js"></script>
 	<script type="text/javascript" src="caman.full.min.js"></script>
@@ -25,7 +26,6 @@
 									})	
 			});
 	</script>
-	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	
 	
