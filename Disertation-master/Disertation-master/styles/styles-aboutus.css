@@ -119,13 +119,14 @@ background-color: #FFF;
 padding: 15px;
 height: 700px;
 width: 670px;
-background-image: url("../images/22.jpg");
+background-image: url("../images/25.jpg");
 background-size: 770px 770px;
 padding: 12px 20px;
 border-radius: 4px;
 position: center;
 border-style: inset;
-border: 5px dotted #000;
+
+border-radius: 12px;
 box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
 margin-bottom: 1px;
 font-family: 'Kalam';font-size: 22px;
@@ -162,6 +163,9 @@ color: black;
 border-color:black;
 }
 
+#close:hover{
+	background-color:#f44336;
+}
 /**This styles Ioana's picture*/
 #ioana{
 position:relative;
