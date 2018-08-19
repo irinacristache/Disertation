@@ -14,12 +14,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--This is the premium editor, the one that requires registering-->
+
 	<title>Photo editor</title>
+	
+	<!--Import CSS files-->
 	<link rel="stylesheet" type="text/css" href="./styles/styles-editor.css">
 	<link rel="stylesheet" type="text/css" href="./styles/allstyles.css">
+	
+	
+	<!--Import JS libraries -->
 	<script type="text/javascript" src="editor-main.js"></script>
 	<script type="text/javascript" src="caman.full.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
 	<script type ="text/javascript">
 		
 		$(function () {
@@ -31,13 +39,29 @@
 									})	
 			});
 	</script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	
+	
+	<!--JQuery for the menu-->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	 <script type="text/javascript">
+	  $(document).ready(function(){
+		  $(".menu-icon").click(function(){
+			$(".menu-icon").toggleClass("active")
+		  })
+		  
+		  $(".menu-icon").click(function(){
+			$(".sidebar").toggleClass("active")
+		  })
+	   })
+	   </script>
+	
+</head>
 	
 </head>
 
 <body>
 	
-
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -48,13 +72,27 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!--This creates the top menu-->
-<div class="container1" align="center">
-			<li><a href="./index.php" class="cool-link">Home</a></li>
-			<li><a href="./gallery.php" class="cool-link">Gallery</a></li>
-			<li><a href="./contact.php" class="cool-link">Contact</a></li>
-			<li><a href="./aboutus.php" class="cool-link">About us</a></li>
 
-</div>
+<div class="menu-icon">
+		
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+		<div class="sidebar">
+		<ul class="menu">
+		   <li><a href="./index.php">Home</a><li>
+		   <li><a href="./aboutus.php">About us</a><li>
+		   <li><a href="./gallery.php">Gallery</a><li>
+		   <li><a href="./contact.php">Contact</a><li>
+		   <li><a href="./register.php">Register</a><li>
+		   <li><a href="./logout.php">Log out</a><li>
+		   <li><a href="./editor.php">Standard Editor</a><li>
+		   <li><a href="./personalise.php">Customise the website</a><li>
+		</ul>
+		
+		</div>
+
 
 
 <div class="editor">
@@ -68,6 +106,8 @@
 				<input id="y" type="text" placeholder="Y Starting position"/><br>
 				<button id="preview">Preview</button>
 				<button id="crop">Crop</button>
+				
+<!--Slider effects which can be adjusted by dragging the button to the left or to the right-->				
 				<!--Slider Brightness-->
 				<p>
 					<label for="brightness">Brightness</label>
@@ -140,33 +180,45 @@
 					<label for="stackBlur">stackBlur</label>
 					<input id="stackBlur" name="stackBlur" type="range" min=-100 max=100 value=0>
 				</p>
-	
-				<!--Buttons for filters-->
-				<button id="lomo" class="filter">Lomo</button>
-				<button id="clarity" class="filter">Clarity</button>
-				<button id="hazydays" class="filter">Smooth but Foggy</button>
-				<button id="herMajesty" class="filter">Pink</button>
-				<button id="love" class="filter">Red for Love</button>
-				<button id="crossProcess" class="filter">Purple Vibe</button>
-				<button id="orangePeel" class="filter">Orange</button>
-				<button id="glowingSun" class="filter">Yellow</button>
-				<button id="jarques" class="filter">Gray Area</button>
-				<button id="grungy" class="filter">Welcome to the Dark Side</button>
-				<button id="sinCity" class="filter">Black & White</button>
-				<button id="pinhole" class="filter">Black & White (Smooth)</button>
-				<button id="vintage" class="filter">Vintage</button>
-				<button id="sunrise" class="filter">Memories</button>
 				
 				<!--Add text over image-->
 				<h4>Add a message over your image:</h4>
 				<input type="text" id="message" placeholder="Type a message">
 				<button id="submit">Add Text</button>
 				
-			</div>
+				<!--Buttons for filters-->
+				<h3>Edit by colour theme</h3>
+				<button id="herMajesty" class="filter">Pink</button>
+				<button id="love" class="filter">Red for Love</button>
+				<button id="crossProcess" class="filter">Purple Vibe</button>
+				<button id="orangePeel" class="filter">Orange</button>
+				<button id="glowingSun" class="filter">Yellow</button>
+				<button id="jarques" class="filter">Gray Area</button>
+				<p><h3>Edit using special effects</h3></p>
+				<button id="lomo" class="filter">Lomo</button>
+				<button id="clarity" class="filter">Clarity</button>
+				<button id="hazydays" class="filter">Smooth but Foggy</button>
+				<h3>Vintage edits</h3>
+				<p><button id="grungy" class="filter">Welcome to the Dark Side</button></p>
+				<button id="sinCity" class="filter">Black & White</button>
+				<button id="pinhole" class="filter">Black & White (Smooth)</button>
+				<button id="vintage" class="filter">Vintage</button>
+				<button id="sunrise" class="filter">Memories</button>
+				
+
+	
+				
+			
+		</div>
 				<img id="image" class="img" src="./images/19.png">
 		</div>
 		
-		
+
+
+
+
+
+<!---Social media buttons-->	
 <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
     <a class="a2a_button_facebook"></a>
     <a class="a2a_button_twitter"></a>
@@ -183,8 +235,6 @@
 </body>
 </html>
 
-
-<button class="button button4"  onclick="document.location='logout.php'">Log out</button>
 
 
 

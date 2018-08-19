@@ -76,8 +76,9 @@ if(isset($_SESSION['image']))
 		   <li><a href="./contact.php">Contact</a><li>
 		   <li><a href="./register.php">Register</a><li>
 		   <li><a href="./login.php">Log in</a><li>
-		   <li><a href="./editor.php">Editor</a><li>
-		     <li><a href="./personalise.php">Customise the website</a><li>
+		   <li><a href="./editor.php">Standard Editor</a><li>
+		   <li><a href="./myaccount.php">Premium Editor</a><li>
+		   <li><a href="./personalise.php">Customise the website</a><li>
 		</ul>
 		
 		</div>
@@ -117,7 +118,9 @@ if(isset($_SESSION['image']))
 				<div class="popupBoxContent">
 				    <button id="close" onclick="toggle_visibility('popupBoxTwoPosition');">X</button>
 					<h3><center>Irina Cristache</center></h3>
-					<p>Insert description here</p>
+					<p>Thank you for stopping by! My passion for photography started a few years ago.I spent a lot of time trying to find the perfect photo editor but I failed.
+					So I learned how to code and made my own.
+					<p>I am a Conversion MSc Student at the University of Kent and although it was challenging to study full time and work part time on the side, it was a rewarding experience because I learned how to manage my time efficiently and how to code, which is something that I have always wanted to learn. </p>
 				</div>
 			</div>
 		</div>
