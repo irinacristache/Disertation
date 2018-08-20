@@ -64,10 +64,10 @@ button:hover {
 	color: white;
 }
 
-
+ /*style the input button*/  
 input[type="file"] {
    color: black;
-    background-color: #A9A9A9;
+    background-color: #fffaf0;
     font-family: sans-serif;
 	padding: 16px 32px;
     text-align: center;
@@ -78,8 +78,8 @@ input[type="file"] {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-	border-radius: 20px;
 }
+
 
 #share-buttons img {
 width: 35px;
@@ -131,25 +131,5 @@ position:right;
 	left:40%;
 	
 }
-/**styles the editor's buttons so on hover they turn blue*/
 
-button:hover {
-    background-color: #f44336;
-	color: white;
-}
- /*style the input button*/  
-input[type="file"] {
-   color: white;
-    background-color: #fffaf0;
-    font-family: sans-serif;
-	padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
   
