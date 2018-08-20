@@ -171,8 +171,8 @@ if(isset($_SESSION['image']))
 <!--Creates the registration form -->
 <div class="registration-form">
     <form id="registration-form" class="form" action="register.php" onclick="login.php" method="post" >
-	  <input type="text"class="form-control" name="FirstName" placeholder="Firstname" value="<?php print $FirstName; ?>" required/>
-	  <input type="text" class="form-control" name="LastName" placeholder="Lastname" value="<?php print $LastName; ?>" required/>
+	  <input type="text"class="form-control" name="FirstName" placeholder="First name" value="<?php print $FirstName; ?>" required/>
+	  <input type="text" class="form-control" name="LastName" placeholder="Last name" value="<?php print $LastName; ?>" required/>
 	  <input type="text" class="form-control" placeholder="Username"  name="Username" value="<?php print $Username; ?>" required />
       <input type="email" class="form-control" placeholder="Email"  name="Email" value="<?php print $Email; ?>" required />
       <input type="password" class="form-control" placeholder="Password" name="Password" autocomplete="new-password" required />
